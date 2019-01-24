@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
     name: "BaseMath",
     products: [
-      .library( name: "BaseMath", targets: ["BaseMath"]),
+      .library( name: "BaseMath", type: .dynamic, targets: ["BaseMath"]),
     ],
     targets: [
         .target( name: "CBaseMath"),
